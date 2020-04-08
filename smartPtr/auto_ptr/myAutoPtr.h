@@ -10,6 +10,7 @@ public:
 		m_ptr = nullptr;
 		return tmp;
 	}
+
 	int* get() const noexcept { // 返回该对象的内存地址
 		return m_ptr;
 	}
@@ -18,7 +19,6 @@ public:
 		if (ptr != m_ptr) {
 			delete m_ptr;
 		}
-
 		m_ptr = ptr;
 	}
 
